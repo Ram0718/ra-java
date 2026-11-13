@@ -23,10 +23,13 @@ backend/target/
 
 # Local H2 Database files & logs
 backend/data/
-data/
+/data/
 *.db
 *.mv.db
 *.trace.db
+
+# Ensure source data is NEVER ignored
+!src/data/
 
 # Editor directories and files
 .vscode/*
